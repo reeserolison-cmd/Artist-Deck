@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Deck // Workflow Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Analog-Futurism Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="deck-container">
+        <!-- HEADER / DIGITAL TRADING CARD PROFILE -->
+        <header class="deck-header">
+            <div class="artist-badge">
+                <span class="status-dot"></span> LIVE DECK // V1.0
+            </div>
+            <div class="artist-info">
+                <h1>KAIROS</h1>
+                <p class="tagline">Producer & Recording Artist // Alternative Electronic & Hip-Hop</p>
+            </div>
+            <div class="deck-actions">
+                <button class="btn btn-primary" id="exportBtn">Export Deck HTML</button>
+            </div>
+        </header>
+
+        <!-- MAIN DASHBOARD GRID -->
+        <div class="dashboard-grid">
+            
+            <!-- SECTION 1: STREAMING METRICS -->
+            <section class="card streaming-section">
+                <h2>Platform Streams</h2>
+                <div class="metrics-grid" id="metricsGrid">
+                    <!-- Dynamic Items Injected via JS -->
+                </div>
+            </section>
+
+            <!-- SECTION 2: WORKS IN PROGRESS (WIP) -->
+            <section class="card wip-section">
+                <h2>Works in Progress (WIP)</h2>
+                <div class="wip-list" id="wipList">
+                    <!-- Dynamic Items Injected via JS -->
+                </div>
+                <div class="add-item-form">
+                    <input type="text" id="newWipTitle" placeholder="Track Title (e.g., Midnight Run)...">
+                    <button class="btn btn-secondary" id="addWipBtn">+ Add Track</button>
+                </div>
+            </section>
+
+            <!-- SECTION 3: TOUR & LIVE SCHEDULE -->
+            <section class="card tour-section">
+                <h2>Live Schedule & Tour</h2>
+                <ul class="tour-list" id="tourList">
+                    <!-- Populated via JS -->
+                </ul>
+            </section>
+
+            <!-- SECTION 4: COLLABORATION PIPELINE -->
+            <section class="card collab-section">
+                <h2>Collab Pipeline</h2>
+                <div class="collab-board" id="collabBoard">
+                    <!-- Populated via JS -->
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
